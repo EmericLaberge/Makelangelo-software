@@ -94,6 +94,13 @@ Dans la section "jobs -> build -> steps":
     - name: Print Coverage
       run: 'echo "Coverage: $COVERAGE%"'
 ```
+
+### Code retiré dans le fichier `./.github/workflows/test.yml`:
+Nous avons retiré la section "jobs -> build -> steps -> name: Fail if coverage
+has not improved" car nous avons assumé selon les consignes que l'on devait
+recloner le repo et non pas utiliser le repo déjà cloné lors de la tâche 2. Cela
+faisait en sorte que le coverage était toujours égal au précédent puisque nous
+avons uniquement modifié les fichiers dans le `.github`. 
 ## Comment voir les résultats des tests:
 
 Pour voir les résultats des tests, dans la section "Actions" de ce dépôt,
@@ -104,11 +111,9 @@ Pour chaque action:
 - La couverture de code est affichée dans le log intitulé "Print Coverage".
 
 ## Notes supplémentaires: 
-La partie **Matrix:package** de l'action **maven.yml** indique les 3 jobs
+- La partie **Matrix:package** de l'action **maven.yml** indique les 3 jobs
 échouent mais en réalité c'était déjà le cas avant l'ajout des flags. C'est un
 problème du repo distant qui n'a pas été corrigé.
-
-
-
-
-
+- Au besoin, sachez que nous avons également ajouté effectué la tâche 3 sur le 
+repo de la tâche 2. Vous pouvez y accéder en accédant au lien suivant: 
+[Repo Tâche 2](https://github.com/Math-Morin/Makelangelo-software)
