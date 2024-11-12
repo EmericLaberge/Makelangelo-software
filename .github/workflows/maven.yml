@@ -34,6 +34,7 @@ jobs:
 
     - name: Set up JVM Options
       run: echo "MAVEN_OPTS=${{ matrix.jvm-flags }}" >> $GITHUB_ENV
+
     # from https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
     - name: Build and Test with Maven
       timeout-minutes: 15
