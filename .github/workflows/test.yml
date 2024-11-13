@@ -33,6 +33,9 @@ jobs:
       timeout-minutes: 15
       run: ./mvnw -B verify
 
+    - name: Print JVM Flags
+      run: 'echo "Current JVM flags : $MAVEN_OPTS"'
+
     - name: Get JaCoCo Coverage
       id: coverage  
       run: |
