@@ -110,6 +110,25 @@ Pour chaque action:
 - Les flags sont affichés dans le log intitulé "Print JVM Flags".
 - La couverture de code est affichée dans le log intitulé "Print Coverage".
 
+## Humour
+Michelangelo avait un sens extraordinaire de l'esthétique. Nous croyons donc qu'il va de soi que Makelangelo ait une
+capacité à reconnaitre le beau qui soit tout aussi développé. Nous avons ainsi ajouté un 
+[test](src/test/java/com/marginallyclever/makelangelo/makeart/tools/TestBeauBonhomme.java) pour démontrer qu'en effet, 
+Emeric est bel et bien un beau bonhomme.
+
+```
+  , ; ,   .-'"""'-.   , ; ,
+  \\|/  .'         '.  \|//
+   \-;-/   ()   ()   \-;-/
+   // ;               ; \\
+  //__; :.         .; ;__\\
+ `-----\'.'-.....-'.'/-----'
+        '.'.-.-,_.'.'
+          '(  (..-'
+            '-'
+```
+source: https://www.asciiart.eu/computers/smileys
+
 ## Notes supplémentaires: 
 - La partie **Matrix:package** de l'action **maven.yml** indique les 3 jobs
 échouent mais en réalité c'était déjà le cas avant l'ajout des flags. C'est un
